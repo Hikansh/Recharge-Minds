@@ -1,0 +1,20 @@
+#tt-menu-toggle{
+	padding: 5px 0 5px 5px;
+	font-size: 23px;
+	line-height: 1;
+	display: inline-block;
+	color: $default_color02;
+	position: relative;
+	&:hover{
+		color: $default_color;
+	}
+	@include media-breakpoint-down(sm) {
+		font-size: 19px;
+		padding: 4px 0 5px 5px;
+	}
+}
+@media (min-width: 1361px){
+	.toggle-wrapper{
+		display: none;
+	}
+}

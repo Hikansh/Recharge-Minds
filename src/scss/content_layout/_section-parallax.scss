@@ -1,0 +1,53 @@
+.section-parallax{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 615px;
+	color: #ffffff;
+	.section-parallax__title{
+		font-size: 36px;
+		line-height: 46px;
+		color: #ffffff;
+		font-family: $default_font2;
+		font-weight: 600;
+		margin: 0;
+		padding:0 0 23px 0;
+		& + p{
+			margin-top: 0;
+		}
+	}
+	p{
+		letter-spacing: 0.01em;
+	}
+	@include media-breakpoint-down(md) {
+		height: 356px;
+		.section-parallax__title{
+			font-size: 30px;
+			line-height: 38px;
+			padding:0 0 10px 0;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		height: auto;
+		padding: 74px 15px;
+		.section-parallax__title{
+			font-size: 24px;
+			line-height: 30px;
+			padding:0 0 10px 0;
+		}
+		br{
+			display: none;
+		}
+	}
+}
+html:not(.mac) .section-parallax {
+	@include media-breakpoint-up(lg) {
+		background-attachment: fixed;
+	}
+}

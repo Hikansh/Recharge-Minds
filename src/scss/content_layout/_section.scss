@@ -1,0 +1,209 @@
+/*
+	Section Indent
+*/
+.section-indent{
+	&:not(.no-margin){
+		@media (min-width: 1025px){
+			margin-top: 120px;
+		}
+		@media (max-width: 1024px){
+			margin-top: 80px;
+		}
+		@media (max-width: 790px){
+			margin-top: 60px;
+		}
+	}
+}
+
+.section-indent-extra{
+	@include media-breakpoint-up(lg) {
+		margin-top: -40px;
+		position: relative;
+		z-index: 2;
+	}
+	@include media-breakpoint-down(md) {
+		margin-top: 0;
+	}
+}
+.section-indent-extra02{
+	@media (min-width: 1025px){
+		margin-top: -80px;
+		position: relative;
+		z-index: 2;
+	}
+	@media (max-width: 1024px){
+		margin-top: 0px;
+	}
+}
+.section-indent-extra03{
+	@media (min-width: 1025px){
+		margin-top: -70px;
+		position: relative;
+		z-index: 2;
+	}
+	@media (max-width: 1024px){
+		margin-top: 80px;
+	}
+	@media (max-width: 790px){
+		margin-top: 60px;
+	}
+}
+
+.section-inner{
+	@media (min-width: 1025px){
+		padding: 120px 0 66px;
+		& + .section-inner{
+			padding: 54px 0 66px;
+		}
+		& + .section-indent{
+			margin-top: 54px;
+		}
+	}
+	@media (max-width: 1024px){
+		padding: 80px 0 26px;
+		& + .section-inner{
+			padding: 54px 0 66px;
+		}
+		& + .section-indent{
+			margin-top: 13px;
+		}
+
+	}
+	@media (max-width: 790px){
+		padding: 60px 0 26px;
+		& + .section-inner{
+			padding: 34px 0 60px;
+		}
+		& + .section-indent{
+			margin-top: 0px;
+		}
+	}
+}
+.section-inner02{
+	@media (min-width: 1025px){
+		padding: 100px 0;
+	}
+	@media (max-width: 1024px){
+		padding: 80px 0;
+	}
+	@media (max-width: 790px){
+		padding: 60px 0;
+	}
+}
+.section-inner03{
+	@media (min-width: 1025px){
+		padding: 120px 0;
+	}
+	@media (max-width: 1024px){
+		padding: 80px 0;
+	}
+	@media (max-width: 790px){
+		padding: 60px 0;
+	}
+}
+.section-inner-round-layout01{
+	padding: 103px 0 66px 0;
+	@media (max-width: 1229px){
+		padding: 118px 0 66px 0;
+	}
+	@include media-breakpoint-down(md) {
+		padding: 78px 0 26px 0;
+	}
+	@media (max-width: 790px){
+		padding: 58px 0 26px 0;
+	}
+}
+.section-inner-round-layout02{
+	padding: 31px 0 70px 0;
+	@include media-breakpoint-down(lg) {
+		padding: 100px 0 66px;
+	}
+	@include media-breakpoint-down(md) {
+		padding: 78px 0 54px;
+	}
+	@media (max-width: 790px){
+		padding: 58px 0 40px;
+	}
+	@media (max-width: 660px){
+		padding: 60px 0 0px;
+	}
+}
+/*
+	Section Wrapper
+*/
+.tt-wrapper01{
+	background-color: #f1f3f5;
+	height: 100%;
+}
+.tt-wrapper02{
+	background-color: #ffffff;
+	box-shadow:0 19px 40px rgba(157,174,185,.15);
+	height: 100%;
+}
+.tt-wrapper03{
+	background-color: #ffffff;
+	background-position: 87% center;
+	background-repeat: no-repeat;
+	@include media-breakpoint-down(lg) {
+		background-position: 140% center;
+		background-size: 55%, 55%;
+	}
+	@include media-breakpoint-down(sm) {
+		background: none !important;
+	}
+}
+.tt-wrapper04{
+	background-color: #ffffff;
+	background-position: 27% center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	@include media-breakpoint-down(lg) {
+		background-size: 55%, 55%;
+		background-position: 20% center;
+	}
+	@include media-breakpoint-down(md) {
+		background-size: 55%, 55%;
+		background-position: 15% center;
+	}
+	@include media-breakpoint-down(sm) {
+		background: none !important;
+	}
+}
+.tt-wrapper05{
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	@include media-breakpoint-down(sm) {
+		background: none !important;
+	}
+}
+.tt-wrapper06{
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.wrapper-bottom-right{
+	background-position:  right bottom;
+	background-repeat: no-repeat;
+	@include media-breakpoint-down(lg) {
+		background-size: 55%, 55%;
+	}
+	@include media-breakpoint-down(sm) {
+		background: none !important;
+	}
+}
+.wrapper-left-center{
+	background-position: 0px 73px;
+	background-repeat: no-repeat;
+	@include media-breakpoint-down(sm) {
+		background-image: none !important;
+	}
+}
+.wrapper-right-col{
+	background-repeat: no-repeat;
+	background-position: 117% center;
+	@include media-breakpoint-down(lg) {
+		background-size: 80%, 80%;
+	}
+	@include media-breakpoint-down(sm) {
+		background-image: none !important;
+	}
+}

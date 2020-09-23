@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @@include('includes/head.html')
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?sensor=false"
+    ></script>
+  </head>
+  <body>
+    @@include('includes/header/header-01.html')
+    <div id="subtitle-wrapper">
+      <div class="container container-fluid-xl">
+        <div class="tt-breadcrumbs">
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li>contact us</li>
+          </ul>
+        </div>
+        <h1 class="subtitle__title">Contact Us</h1>
+      </div>
+    </div>
+    <main id="tt-pageContent">
+      <div
+        class="tt-wrapper05 section-inner03"
+        style="background-image: url('images/Connect\ With\ Us.jpg')"
+      >
+        <div class="container container-fluid-xl">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="tt-text-indent-right">
+                <div class="title-block">
+                  <div class="title-block__label">
+                    Get in Touch With Us
+                  </div>
+                  <h2 class="title-block__title">
+                    Let's Discuss Any Sanitizing Services Enquiry
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="tt-title-text-align">
+                We are making every attempt to complete requests and fulfill
+                orders in as timely a fashion as possible. You may fill out our
+                form below, but please be patient as we work to produce cleaning
+                chemicals and disinfectants for the health and safety of
+                everyone. Thank you!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="section-indent no-margin">
+		<div id="map"></div>
+	</div> -->
+      <div
+        class="section-wrapper tt-wrapper06"
+        style="background-image: url('images/wrapper-contact.png');"
+      >
+        <div class="section-indent-extra03">
+          <div class="container container-fluid-xl">
+            <div class="row box-contact__wrapper">
+              <div class="col-sm-6 col-md-3">
+                <div class="box-contact">
+                  <i class="box-contact__icon icon-1124618"></i>
+                  <h6 class="box-contact__title">Post Address</h6>
+                  <address>
+                    254 Lillian Blvd, Holbrook,<br />
+                    NY 11741, USA
+                  </address>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="box-contact">
+                  <i class="box-contact__icon icon-1034182"></i>
+                  <h6 class="box-contact__title">Contact Phone</h6>
+                  <address>
+                    <a href="tel:1-800-654-3210">1-800-654-3210</a>
+                  </address>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="box-contact">
+                  <i class="box-contact__icon icon-70562"></i>
+                  <h6 class="box-contact__title">E-mail Address</h6>
+                  <address>
+                    <a href="mailto:info@santizex-site.com"
+                      >info@santizex-site.com</a
+                    >
+                  </address>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="box-contact">
+                  <i class="box-contact__icon icon-70898"></i>
+                  <h6 class="box-contact__title">Opening Hours</h6>
+                  <address>
+                    Mon-Fri: 08:00 AM - 05:00 PM Sat-Sun: Closed
+                  </address>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-indent">
+          <div class="container container-fluid-lg">
+            <div class="title-block text-center">
+              <h2 class="title-block__title">
+                Get in Touch. We're Here to Help.
+              </h2>
+              <div class="title-block__text tt-width-large">
+                We look forward to helping you create and maintain a clean,
+                healthy environment that’s as enjoyable as it is functional.
+              </div>
+            </div>
+            <div class="row justify-content-md-center">
+              <div class="col-md-9 col-lg-8">
+                <form
+                  class="form-default text-center"
+                  id="contact-form"
+                  method="post"
+                  novalidate="novalidate"
+                  action="#"
+                >
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div class="row row-align-col">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="email"
+                          class="form-control"
+                          placeholder="E-mail"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="phonenumber"
+                          class="form-control"
+                          placeholder="Phone"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      name="message"
+                      rows="4"
+                      class="form-control"
+                      placeholder="Your message"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="tt-btn tt-btn-form">
+                    SEND MESSAGE <span class="icon-271228"></span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="tt-footer">
+      @@include('includes/footer/footer-01.html')
+    </footer>
+    @@include('includes/include-js.html')
+    <script src="separate-include/map-init.js"></script>
+    @@include('includes/include-modal.html')
+    @@include('includes/include-back-to-top.html')
+  </body>
+</html>

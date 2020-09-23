@@ -1,0 +1,101 @@
+/*
+	Table
+*/
+.tt-table-wrapper01{
+	padding: 39px;
+	background-color: #ffffff;
+	box-shadow: 0 19px 40px rgba(157, 174, 185, 0.15);
+	@include media-breakpoint-down(md) {
+		padding: 30px;
+	}
+	@include media-breakpoint-down(sm) {
+		padding: 15px;
+	}
+}
+
+table{
+	width: 100%;
+}
+.table-01{
+	tr{
+		td,
+		th,{
+			&:first-child{
+				width:65%;
+				padding: 9px 25px;
+			}
+			&:last-child{
+				width:35%;
+				padding: 9px 25px;
+			}
+		}
+	}
+	thead{
+		background-color: $default_color;
+		color: #ffffff;
+		th{
+			font-weight: bold;
+		}
+	}
+	tbody{
+		tr{
+			&:nth-child(odd){
+				background-color: #f4f5f7;
+			}
+			td{
+				color: $default_color02;
+				&:first-child(){
+					font-weight: bold;
+				}
+			}
+			&.levle-02{
+				td{
+					&:first-child(){
+						font-weight: 400;
+						color: $default_text_color;
+						padding-left: 44px;
+					}
+				}
+			}
+		}
+	}
+	@include media-breakpoint-down(md) {
+		tr{
+			td,
+			th,{
+				&:first-child{
+					width:60%;
+					padding: 8px 10px;
+				}
+				&:last-child{
+					width:40%;
+					padding: 8px 10px;
+				}
+			}
+		}
+		tbody{
+			tr{
+				&.levle-02{
+					td{
+						&:first-child(){
+							padding-left: 25px;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		tr{
+			td,
+			th,{
+				&:first-child{
+					padding: 6px 10px;
+				}
+				&:last-child{
+					padding: 6px 10px;
+				}
+			}
+		}
+	}
+}
